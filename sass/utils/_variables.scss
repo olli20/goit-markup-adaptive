@@ -1,0 +1,12 @@
+$colors: (
+    'accent': #lightblue,
+    'text-primary': #212121
+);
+
+// function
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+// usage 
+// {color: getColor('accent');}
