@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
+    <title>My Top-5</title>
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="" class="logo">Logotype</a>
-            <ul>
-                <li><a href="">Item 1</a></li>
-                <li><a href="">Item 2</a></li>
-                <li><a href="">Item 3</a></li>
-                <li><a href="">Item 4</a></li>
-                <li><a href="">Item 5</a></li>
+        <nav class="page-nav">
+            <a href="./index.html" class="logo">Top-5 Colors 2022</a>
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./index.html">Scheme 1</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./scheme2.html">Scheme 2</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./scheme3.html">Scheme 3</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./scheme4.html">Scheme 4</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./scheme5.html">Scheme 5</a>
+                </li>
             </ul>
             <button class="menu-button">
                 <svg>
@@ -27,16 +37,45 @@
         </nav>
     </header>
     <main>
-        <section>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        <hero class="hero">
+            <h1 class="hero__title">The best color schemes of my choice</h1>
+        </hero>
+        <section class="section">
+            <div class="container">
+                <h1 class="section__title">Scheme name</h1>
+                <p class="section__hint">Also on this page you can learn how to count in German</p>
+                <ul class="colors grid">
+                    <li class="colors__item">
+                        <span class="colors__name">&#35;E1FCFD</span> erste
+                    </li>
+                    <li class="colors__item">
+                        <span class="colors__name">&#35;9CF6FB</span> zweite
+                    </li>
+                    <li class="colors__item">
+                        <span class="colors__name">&#35;394F8A</span> dritte
+                    </li>
+                    <li class="colors__item">
+                        <span class="colors__name">&#35;4A5FC1</span> vierte
+                    </li>
+                    <li class="colors__item">
+                        <span class="colors__name">&#35;E5B9A8</span> funfte
+                    </li>
+                    <li class="colors__item">
+                        <span class="colors__name">&#35;EAD6CD</span> sechste
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 </body>
 </html>
+
+$colors: (
+'accent': #E1FCFD,
+'erste': #E1FCFD,
+'zweite': #9CF6FB,
+'dritte': #394F8A,
+'vierte': #4A5FC1,
+'funfte': #E5B9A8,
+'sechste': #EAD6CD
+);

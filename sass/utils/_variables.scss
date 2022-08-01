@@ -1,12 +1,19 @@
 $colors: (
-    'accent': #lightblue,
-    'text-primary': #212121
+    'accent': #E1FCFD,
+    'erste': #E1FCFD,
+    'zweite': #9CF6FB,
+    'dritte': #394F8A,
+    'vierte': #4A5FC1, 
+    'funfte': #E5B9A8,     
+    'sechste': #EAD6CD
 );
 
 // function
 @function getColor($key) {
     @return map-get($colors, $key);
-}
+};
 
 // usage 
 // {color: getColor('accent');}
+
+     
