@@ -1,3 +1,10 @@
 @import './utils/variables';
+@import './utils/breakpoints';
 @import './base/normalize';
+@import './utils/placeholders';
 
+@import './components/container';
+
+@import './components/logo';
+@import './components/page-header';
+@import './components/main';

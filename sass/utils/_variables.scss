@@ -1,5 +1,4 @@
-$colors: (
-    'accent': #E1FCFD,
+$colors-1: (
     'erste': #E1FCFD,
     'zweite': #9CF6FB,
     'dritte': #394F8A,
@@ -8,10 +7,18 @@ $colors: (
     'sechste': #EAD6CD
 );
 
+// $icons: (
+//     "eye": "\f112",
+//     "start": "\f12e",
+//     "stop": "\f12f"
+// );
+
+
+
 // function
-@function getColor($key) {
-    @return map-get($colors, $key);
-};
+// @function getColor($key) {
+//     @return map-get($colors, $key);
+// };
 
 // usage 
 // {color: getColor('accent');}

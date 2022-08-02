@@ -1,0 +1,79 @@
+* {
+    outline: 1px solid green;
+}
+
+.colors__grid {
+    @extend %list;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -3px;
+    }
+               
+    @media screen and (min-width: $desktop) {
+        margin: -10px;
+    }
+
+}
+
+.colors__item {
+    display: block;
+    height: 85px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+    &:not(:last-child) {
+        @media screen and (max-width: calc($tablet - 1px)) {
+            margin-bottom: 6px;
+        }           
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 12px) / 2);
+        margin: 3px; 
+    }
+
+    // прибирає марижн у останніх дво елентів на таблетці
+    // &:nth-last-child(-n + 2) {
+    //     @media screen and (min-width: $tablet) {
+    //         margin-bottom: 0px;
+    //     }
+    // }
+    
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 60px) / 3);
+        margin: 10px;
+    }
+    
+}
+
+@each $color,
+$value in $colors-1 {
+    .colors__item--#{$color} {
+        background-color: $value;
+    }
+}
+
+.colors__name {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 22px;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        display: block;
+        border-bottom: 2px dotted black;
+        width: 70px;
+    }
+}
+.colors__deutsch-name {
+    display: block;
+}

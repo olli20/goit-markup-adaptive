@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="page-nav">
+        <nav class="page-nav container">
             <a href="./index.html" class="logo">Top-5 Colors 2022</a>
             <ul class="main-menu">
                 <li class="main-menu__item">
@@ -28,40 +28,43 @@
                     <a class="main-menu__link" href="./scheme5.html">Scheme 5</a>
                 </li>
             </ul>
-            <button class="menu-button">
+            <!-- <button class="menu-button">
                 <svg>
                     <use class="icon-close" href=""></use>
                     <use class="icon-menu" href=""></use>
                 </svg>
-            </button>
+            </button> -->
         </nav>
     </header>
     <main>
-        <hero class="hero">
-            <h1 class="hero__title">The best color schemes of my choice</h1>
-        </hero>
-        <section class="section">
+        <section class="section colors">
             <div class="container">
                 <h1 class="section__title">Scheme name</h1>
                 <p class="section__hint">Also on this page you can learn how to count in German</p>
-                <ul class="colors grid">
-                    <li class="colors__item">
-                        <span class="colors__name">&#35;E1FCFD</span> erste
+                <ul class="colors__grid">
+                    <li class="colors__item colors__item--erste">
+                        <span class="colors__name">&#35;E1FCFD</span> 
+                        <span class="colors__deutsch-name">erste</span> 
                     </li>
-                    <li class="colors__item">
-                        <span class="colors__name">&#35;9CF6FB</span> zweite
+                    <li class="colors__item colors__item--zweite">
+                        <span class="colors__name">&#35;9CF6FB</span> 
+                        <span class="colors__deutsch-name">zweite</span> 
                     </li>
-                    <li class="colors__item">
-                        <span class="colors__name">&#35;394F8A</span> dritte
+                    <li class="colors__item colors__item--dritte">
+                        <span class="colors__name">&#35;394F8A</span> 
+                        <span class="colors__deutsch-name">dritte</span> 
                     </li>
-                    <li class="colors__item">
-                        <span class="colors__name">&#35;4A5FC1</span> vierte
+                    <li class="colors__item colors__item--vierte">
+                        <span class="colors__name">&#35;4A5FC1</span>
+                        <span class="colors__deutsch-name">vierte</span> 
                     </li>
-                    <li class="colors__item">
-                        <span class="colors__name">&#35;E5B9A8</span> funfte
+                    <li class="colors__item colors__item--funfte">
+                        <span class="colors__name">&#35;E5B9A8</span> 
+                        <span class="colors__deutsch-name">funfte</span> 
                     </li>
-                    <li class="colors__item">
-                        <span class="colors__name">&#35;EAD6CD</span> sechste
+                    <li class="colors__item colors__item--sechste">
+                        <span class="colors__name">&#35;EAD6CD</span> 
+                        <span class="colors__deutsch-name">sechste</span>
                     </li>
                 </ul>
             </div>
@@ -69,13 +72,3 @@
     </main>
 </body>
 </html>
-
-$colors: (
-'accent': #E1FCFD,
-'erste': #E1FCFD,
-'zweite': #9CF6FB,
-'dritte': #394F8A,
-'vierte': #4A5FC1,
-'funfte': #E5B9A8,
-'sechste': #EAD6CD
-);

@@ -266,4 +266,123 @@ Add the correct display in Chrome and Safari.
 */
 summary {
   display: list-item;
+}
+
+.colors__grid, .main-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+* {
+  outline: 1px solid green;
+}
+
+@media screen and (min-width: 768px) {
+  .colors__grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -3px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .colors__grid {
+    margin: -10px;
+  }
+}
+
+.colors__item {
+  display: block;
+  height: 85px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .colors__item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .colors__item {
+    width: calc((100% - 12px) / 2);
+    margin: 3px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .colors__item {
+    width: calc((100% - 60px) / 3);
+    margin: 10px;
+  }
+}
+
+.colors__item--erste {
+  background-color: #E1FCFD;
+}
+
+.colors__item--zweite {
+  background-color: #9CF6FB;
+}
+
+.colors__item--dritte {
+  background-color: #394F8A;
+}
+
+.colors__item--vierte {
+  background-color: #4A5FC1;
+}
+
+.colors__item--funfte {
+  background-color: #E5B9A8;
+}
+
+.colors__item--sechste {
+  background-color: #EAD6CD;
+}
+
+.colors__name {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+.colors__name::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  border-bottom: 2px dotted black;
+  width: 70px;
+}
+
+.colors__deutsch-name {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
