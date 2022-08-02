@@ -7,18 +7,10 @@ $colors-1: (
     'sechste': #EAD6CD
 );
 
-// $icons: (
-//     "eye": "\f112",
-//     "start": "\f12e",
-//     "stop": "\f12f"
-// );
-
-
-
 // function
-// @function getColor($key) {
-//     @return map-get($colors, $key);
-// };
+@function getColor($key) {
+    @return map-get($colors-1, $key);
+};
 
 // usage 
 // {color: getColor('accent');}

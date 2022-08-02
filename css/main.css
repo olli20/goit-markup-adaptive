@@ -274,7 +274,7 @@ summary {
   margin: 0;
 }
 
-.logo {
+.main-menu__link, .logo {
   text-decoration: none;
 }
 
@@ -300,8 +300,105 @@ summary {
   }
 }
 
-* {
-  outline: 1px solid green;
+.page-header {
+  height: 75px;
+  background-color: aqua;
+}
+
+.page-nav {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-menu {
+  position: absolute;
+  top: 75px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100% - 30px);
+  z-index: 5;
+}
+
+.main-menu__item {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  background-color: #E5B9A8;
+}
+.main-menu__item:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.main-menu__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-button {
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu-button .icon-close {
+  display: none;
+}
+.menu-button.is-open .icon-close {
+  display: block;
+}
+.menu-button.is-open .icon-open {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  color: white;
+  background-color: bisque;
+  background-image: url("https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 200px;
+  }
+}
+
+.hero__title {
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 30px;
+  }
+}
+
+.section__title {
+  color: #394F8A;
 }
 
 @media screen and (min-width: 768px) {
@@ -313,7 +410,7 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .colors__grid {
-    margin: -10px;
+    margin: -4px;
   }
 }
 
@@ -326,7 +423,7 @@ summary {
 }
 @media screen and (max-width: 767px) {
   .colors__item:not(:last-child) {
-    margin-bottom: 6px;
+    margin-bottom: 5px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -337,8 +434,8 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .colors__item {
-    width: calc((100% - 60px) / 3);
-    margin: 10px;
+    width: calc((100% - 24px) / 3);
+    margin: 4px;
   }
 }
 

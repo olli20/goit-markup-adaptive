@@ -1,5 +1,9 @@
-* {
-    outline: 1px solid green;
+// * {
+//     outline: 1px solid green;
+// }
+
+.section__title {
+    color: getColor('dritte');
 }
 
 .colors__grid {
@@ -12,9 +16,8 @@
     }
                
     @media screen and (min-width: $desktop) {
-        margin: -10px;
+        margin: -4px;
     }
-
 }
 
 .colors__item {
@@ -26,7 +29,7 @@
 
     &:not(:last-child) {
         @media screen and (max-width: calc($tablet - 1px)) {
-            margin-bottom: 6px;
+            margin-bottom: 5px;
         }           
     }
 
@@ -43,8 +46,8 @@
     // }
     
     @media screen and (min-width: $desktop) {
-        width: calc((100% - 60px) / 3);
-        margin: 10px;
+        width: calc((100% - 24px) / 3);
+        margin: 4px;
     }
     
 }

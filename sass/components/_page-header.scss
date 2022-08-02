@@ -1,3 +1,73 @@
+.page-header {
+    height: 75px;
+    background-color: aqua
+}
+
+.page-nav {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
 .main-menu {
     @extend %list;
+
+    position: absolute;
+    top: 75px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 30px);
+    z-index: 5;
+
 }
+
+.main-menu__item {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: getColor('funfte');
+
+    &:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    }
+}
+
+.main-menu__link {
+    @extend %link;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.menu-button {
+    width: 45px;
+    height: 45px;  
+    
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    
+    & .icon-close {
+        display:none;
+    }
+
+    &.is-open .icon-close {
+        display: block;
+    }
+
+    &.is-open .icon-open {
+        display: none;
+    }
+    
+
+}
+

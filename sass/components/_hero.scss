@@ -1,3 +1,32 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    color: white;
+    background-color: bisque;
+    background-image: url("https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+        height: 200px;
+    }
+}
+
 .hero__title {
+    display: block;
     text-align: center;
+    @media screen and (min-width: $tablet) {
+        font-size: 25px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 30px;
+    }
 }
