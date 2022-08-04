@@ -331,9 +331,6 @@ summary {
     top: 75px;
     left: 15px;
     width: calc(100% - 30px);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
     z-index: 4;
   }
 }
@@ -342,8 +339,8 @@ summary {
   display: block;
   padding: 10px;
   text-align: center;
-  background-color: #ccc;
-  width: 50%;
+  background-color: #EAD6CD;
+  width: 100%;
 }
 .main-menu__item:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
@@ -393,7 +390,7 @@ summary {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    display: none;
+    height: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
